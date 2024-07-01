@@ -1,0 +1,19 @@
+{
+  "name": "marked-util",
+  "main": "build/index.js",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/marked": "^5.0.1",
+    "@types/web": "^0.0.111"
+  },
+  "version": "0.0.1",
+  "license": "ISC",
+  "dependencies": {
+    "from-anywhere": "^0.0.37",
+    "marked": "^5.1.2",
+    "text-or-binary": "^0.0.1"
+  },
+  "type": "module"
+}
