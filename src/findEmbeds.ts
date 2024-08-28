@@ -1,5 +1,5 @@
-import { notEmpty } from "from-anywhere";
-import { MarkdownEmbed } from "from-anywhere/types";
+import { notEmpty } from "edge-util";
+import { MarkdownEmbed } from "edge-util";
 import { flattenMarkdownString } from "./flattenMarkdownString.js";
 import { getTypeFromUrlOrPath } from "text-or-binary";
 /**

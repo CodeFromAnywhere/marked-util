@@ -1,4 +1,4 @@
-import { getExtension } from "from-anywhere";
+import { getExtension } from "edge-util";
 import * as marked from "marked";
 import { getTypeFromUrlOrPath } from "text-or-binary";
 import { flattenMarkdownString } from "./flattenMarkdownString.js";

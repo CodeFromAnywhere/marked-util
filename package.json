@@ -5,13 +5,13 @@
     "typescript": "^5.0.0"
   },
   "devDependencies": {
-    "@types/marked": "^5.0.1",
+    "@types/marked": "^5.0.2",
     "@types/web": "^0.0.111"
   },
-  "version": "0.0.1",
+  "version": "0.0.4",
   "license": "ISC",
   "dependencies": {
-    "from-anywhere": "^0.0.37",
+    "edge-util": "^0.0.27",
     "marked": "^5.1.2",
     "text-or-binary": "^0.0.1"
   },

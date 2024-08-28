@@ -1,4 +1,4 @@
-import { notEmpty } from "from-anywhere";
+import { notEmpty } from "edge-util";
 import { flattenMarkdownString } from "./flattenMarkdownString.js";
 /**
  * find all codeblocks  (stuff between triple bracket)

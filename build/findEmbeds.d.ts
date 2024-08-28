@@ -1,4 +1,4 @@
-import { MarkdownEmbed } from "from-anywhere/types";
+import { MarkdownEmbed } from "edge-util";
 /**
  * find all embedded assets (`![](./img)`)
  */

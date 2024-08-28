@@ -1,4 +1,4 @@
-import { tryParseJson } from "from-anywhere";
+import { tryParseJson } from "edge-util";
 import { findCodeblocks } from "./findCodeblocks.js";
 import { findCodespans } from "./findCodespans.js";
 export const trimCodeblock = (codeblock: string) => {

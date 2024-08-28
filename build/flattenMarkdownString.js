@@ -1,11 +1,11 @@
-import * as marked from "marked";
-import { notEmpty } from "from-anywhere";
+import { marked } from "marked";
+import { notEmpty } from "edge-util";
 import { flattenMarkedTokenRecursive } from "./flattenMarkedTokenRecursive.js";
 /**
  * find all items that match a token, recursively in all nested things
  */
 export const flattenMarkdownString = (markdownString, findFunction) => {
-    const tokenList = marked.marked.lexer(markdownString);
+    const tokenList = marked.lexer(markdownString);
     const result = tokenList
         .map((x) => flattenMarkedTokenRecursive(x, findFunction))
         .filter(notEmpty)

@@ -1,11 +1,11 @@
-import * as marked from "marked";
+import { marked } from "marked";
 /**
  * Recursively flatten a marked token and return something if a find function is met
  */
 export const flattenMarkedTokenRecursive = (
-  token: marked.marked.Token,
-  findFunction: (token: marked.marked.Token) => boolean,
-): marked.marked.Token[] => {
+  token: marked.Token,
+  findFunction: (token: marked.Token) => boolean,
+): marked.Token[] => {
   if (findFunction(token)) {
     return [token];
   }

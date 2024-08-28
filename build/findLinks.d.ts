@@ -1,4 +1,4 @@
-import { MarkdownLink } from "from-anywhere/types";
+import { MarkdownLink } from "edge-util";
 /**
  * find all links
  */
