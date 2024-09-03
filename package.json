@@ -1,9 +1,7 @@
 {
   "name": "marked-util",
   "main": "build/index.js",
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
+  "peerDependencies": {},
   "devDependencies": {
     "@types/marked": "^5.0.2",
     "@types/web": "^0.0.111"
