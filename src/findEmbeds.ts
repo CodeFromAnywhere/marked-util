@@ -1,7 +1,8 @@
-import { notEmpty } from "edge-util";
+import { getExtension, notEmpty } from "edge-util";
 import { MarkdownEmbed } from "edge-util";
 import { flattenMarkdownString } from "./flattenMarkdownString.js";
 import { getTypeFromUrlOrPath } from "text-or-binary";
+
 /**
  * find all embedded assets (`![](./img)`)
  */

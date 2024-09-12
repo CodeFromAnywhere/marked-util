@@ -1,25 +1,20 @@
 {
   "compilerOptions": {
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    "module": "esnext",
-    "target": "esnext",
-    "moduleResolution": "bundler",
+    "rootDir": "src",
+    "outDir": "build",
+    "lib": ["ESNext", "ES2015", "DOM", "DOM.Iterable"],
+    "target": "es2018",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
-    "moduleDetection": "force",
-    "allowImportingTsExtensions": false,
     "strict": true,
     "downlevelIteration": true,
     "skipLibCheck": true,
-    "jsx": "react-jsx",
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
-    "noEmit": false,
-    "types": ["web"],
-    "outDir": "build",
     "sourceMap": true,
-    "declarationMap": true,
-    "declaration": true
+    "declaration": true,
+    "declarationMap": true
   },
   "include": ["src"]
 }
