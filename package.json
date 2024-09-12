@@ -1,17 +1,32 @@
 {
   "name": "marked-util",
-  "main": "build/index.js",
-  "peerDependencies": {},
+  "version": "0.0.4",
+  "main": "build/cjs/index.js",
+  "module": "build/esm/index.js",
+  "types": "build/types/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./build/cjs/index.js",
+      "import": "./build/esm/index.js",
+      "types": "./build/types/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "rm -rf build && npm run build:cjs && npm run build:esm && npm run build:types",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:types": "tsc -p tsconfig.types.json",
+    "up": "npm version patch -f",
+    "pub": "npm run build && npm run up && npm publish"
+  },
   "devDependencies": {
     "@types/marked": "^5.0.2",
-    "@types/web": "^0.0.111"
+    "@types/node": "^22.5.1",
+    "typescript": "^5.0.0"
   },
-  "version": "0.0.4",
-  "license": "ISC",
   "dependencies": {
-    "edge-util": "^0.0.27",
+    "edge-util": "^0.0.51",
     "marked": "^5.1.2",
-    "text-or-binary": "^0.0.1"
-  },
-  "type": "module"
+    "text-or-binary": "^0.0.3"
+  }
 }
