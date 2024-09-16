@@ -1,1 +1,1 @@
-{"version":3,"file":"flattenMarkdownString.d.ts","sourceRoot":"","sources":["../../src/flattenMarkdownString.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,QAAQ,CAAC;AAGhC;;GAEG;AACH,eAAO,MAAM,qBAAqB,mBAChB,MAAM,gBACR,CAAC,KAAK,EAAE,MAAM,CAAC,KAAK,KAAK,OAAO,KAC7C,MAAM,CAAC,KAAK,EAQd,CAAC"}
+{"version":3,"file":"flattenMarkdownString.d.ts","sourceRoot":"","sources":["../../src/flattenMarkdownString.ts"],"names":[],"mappings":"AAGA;;GAEG;AACH,eAAO,MAAM,qBAAqB,mBAChB,MAAM,gBACR,CAAC,KAAK,EAAE,GAAG,KAAK,OAAO,KACpC,GAAG,EAQL,CAAC"}

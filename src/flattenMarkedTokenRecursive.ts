@@ -1,31 +1,31 @@
-import { marked } from "marked";
+import * as marked from "marked";
 /**
  * Recursively flatten a marked token and return something if a find function is met
  */
 export const flattenMarkedTokenRecursive = (
-  token: marked.Token,
-  findFunction: (token: marked.Token) => boolean,
-): marked.Token[] => {
+  token: any,
+  findFunction: (token: any) => boolean,
+): any[] => {
   if (findFunction(token)) {
     return [token];
   }
 
   if (token.type === "table") {
     const header = token.header
-      .map((token) => {
+      .map((token: any) => {
         const result = token.tokens
-          .map((x) => flattenMarkedTokenRecursive(x, findFunction))
+          .map((x: any) => flattenMarkedTokenRecursive(x, findFunction))
           .flat();
         return result;
       })
       .flat();
 
     const rows = token.rows
-      .map((row) => {
+      .map((row: any) => {
         const result = row
-          .map((token) => {
+          .map((token: any) => {
             const result = token.tokens
-              .map((x) => flattenMarkedTokenRecursive(x, findFunction))
+              .map((x: any) => flattenMarkedTokenRecursive(x, findFunction))
               .flat();
 
             return result;
@@ -41,9 +41,9 @@ export const flattenMarkedTokenRecursive = (
 
   if (token.type === "list") {
     const result = token.items
-      .map((token) => {
+      .map((token: any) => {
         const result = token.tokens
-          .map((x) => flattenMarkedTokenRecursive(x, findFunction))
+          .map((x: any) => flattenMarkedTokenRecursive(x, findFunction))
           .flat();
         return result;
       })
@@ -61,7 +61,7 @@ export const flattenMarkedTokenRecursive = (
     token.type === "strong"
   ) {
     const result = token.tokens
-      .map((x) => flattenMarkedTokenRecursive(x, findFunction))
+      .map((x: any) => flattenMarkedTokenRecursive(x, findFunction))
       .flat();
     return result;
   }

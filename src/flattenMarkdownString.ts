@@ -6,8 +6,8 @@ import { flattenMarkedTokenRecursive } from "./flattenMarkedTokenRecursive.js";
  */
 export const flattenMarkdownString = (
   markdownString: string,
-  findFunction: (token: marked.Token) => boolean,
-): marked.Token[] => {
+  findFunction: (token: any) => boolean,
+): any[] => {
   const tokenList = marked.lexer(markdownString);
   const result = tokenList
     .map((x) => flattenMarkedTokenRecursive(x, findFunction))
